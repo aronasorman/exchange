@@ -6,10 +6,8 @@ defmodule Exchange.Router do
     pipe_through :browser
 
     get "/", Exchange.PageController, :index, as: :pages
-  end
 
-  # Other scopes may use custom stacks.
-  # scope "/api" do
-  #   pipe_through :api
-  # end
+    # todolist API
+    resources "/todo", Exchange.TodolistController
+  end
 end
