@@ -1,5 +1,5 @@
 defmodule Exchange.TodolistTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: true
   alias Exchange.Todolist
 
   setup do
