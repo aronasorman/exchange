@@ -13,13 +13,14 @@ defmodule Exchange.Todolist do
   end
 
   def store(task) do
-    newlength = Agent.get_and_update(__MODULE__,
-                                     fn state ->
-                                          ref = make_ref
-                                          newstate = %{state | todos: Dict.put(state.todos, ref, task)}
+    newlength =
+      Agent.get_and_update(__MODULE__,
+                           fn state ->
+                                ref = make_ref
+                                newstate = %{state | todos: Dict.put(state.todos, ref, task)}
 
-                                          {ref, newstate}
-                                     end)
+                                {ref, newstate}
+                           end)
     {:ok, newlength}
   end
 
