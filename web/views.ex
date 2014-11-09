@@ -9,10 +9,7 @@ defmodule Exchange.Views do
       import Exchange.I18n
       import Exchange.Router.Helpers
       alias Phoenix.Controller.Flash
+      alias Poison, as: JSON
     end
   end
-
-  # Functions defined here are available to all other views/templates
 end
-
-

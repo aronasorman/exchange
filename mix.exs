@@ -23,7 +23,6 @@ defmodule Exchange.Mixfile do
   # Type `mix help deps` for examples and options
   defp deps do
     [{:phoenix, "0.5.0"},
-     {:cowboy, "~> 1.0"},
-     {:poison, git: "https://github.com/devinus/poison.git"}]
+     {:cowboy, "~> 1.0"}]
   end
 end
