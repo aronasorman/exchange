@@ -7,9 +7,10 @@ defmodule Exchange do
     import Supervisor.Spec, warn: false
 
     children = [
-      # Define workers and child supervisors to be supervised
-      # worker(Exchange.Worker, [arg1, arg2, arg3])
-    ]
+                # Define workers and child supervisors to be supervised
+                # worker(Exchange.Worker, [arg1, arg2, arg3])
+                worker(Exchange.Todolist, [])
+               ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
     # for other strategies and supported options
