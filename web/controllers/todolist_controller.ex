@@ -1,11 +1,12 @@
 defmodule Exchange.TodolistController do
   use Phoenix.Controller
+  alias Exchange.Todolist
 
   plug :action
 
   def index(conn, _params) do
+    todos = Todolist.all
     conn
-    |> put_resp_content_type("application/json")
-    |> render "index"
+    |> render("index", %{todos: todos})
   end
 end
