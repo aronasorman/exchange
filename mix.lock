@@ -1,7 +1,7 @@
 %{"cowboy": {:hex, :cowboy, "1.0.0"},
   "cowlib": {:hex, :cowlib, "1.0.0"},
-  "linguist": {:hex, :linguist, "0.1.2"},
-  "phoenix": {:hex, :phoenix, "0.5.0"},
-  "plug": {:hex, :plug, "0.8.2"},
+  "linguist": {:hex, :linguist, "0.1.4"},
+  "phoenix": {:git, "git://github.com/phoenixframework/phoenix.git", "fa5f9e5484a4dce360c3d925babb4951a39f032c", []},
+  "plug": {:hex, :plug, "0.8.3"},
   "poison": {:hex, :poison, "1.2.0"},
   "ranch": {:hex, :ranch, "1.0.0"}}
