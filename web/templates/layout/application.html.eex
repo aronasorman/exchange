@@ -12,11 +12,6 @@
   </head>
 
   <body>
-    <!-- import JS files here -->
-    <script src="/js/underscore.js"></script>
-    <script src="/js/backbone.js"></script>
-    <!-- End JS import -->
-
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">

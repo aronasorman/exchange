@@ -1,4 +1,3 @@
 defmodule Exchange.PageView do
-  use Exchange.Views
-
+  use Exchange.View
 end

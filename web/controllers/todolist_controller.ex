@@ -7,6 +7,6 @@ defmodule Exchange.TodolistController do
   def index(conn, _params) do
     todos = Todolist.all
     conn
-    |> render("index", %{todos: todos})
+    |> render("index.json", %{todos: todos})
   end
 end

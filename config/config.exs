@@ -9,9 +9,7 @@ use Mix.Config
 config :phoenix, Exchange.Router,
   url: [host: "localhost"],
   http: [port: System.get_env("PORT")],
-  https: false,
-  secret_key_base: "cUXFFCkgoKRA0Zhw6vmd6NkKcrey/+OiH7xQ2LXClSklJrG9LMpDFrlQijDtagmDxyLynFtjYoWuenuWAXz2sQ==",
-  catch_errors: true,
+  secret_key_base: "lFmsyBwJNkG5jPQElRPjEjNKKMsDZZ+0g/iEoqQJjkoyxcMqjnA4GZfdgI0rURfI9OWcs5O3yAnm7zs5dV0nEA==",
   debug_errors: false,
   error_controller: Exchange.PageController
 

@@ -1,4 +1,4 @@
-defmodule Exchange.Views do
+defmodule Exchange.View do
   use Phoenix.View, root: "web/templates"
 
   # The quoted expression returned by this block is applied
@@ -17,5 +17,5 @@ defmodule Exchange.Views do
     end
   end
 
-# Functions defined here are available to all other views/templates
+  # Functions defined here are available to all other views/templates
 end

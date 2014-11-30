@@ -1,27 +1,25 @@
 defmodule Exchange.Router do
   use Phoenix.Router
 
+  pipeline :browser do
+    plug :accepts, ~w(html)
+    plug :fetch_session
+  end
+
   pipeline :api do
-    plug :json_api
+    plug :accepts, ~w(json)
+    plug :fetch_session
   end
 
-  scope "/" do
-    # Use the default browser stack.
-    pipe_through :browser
+  scope "/", Exchange do
+    pipe_through :browser # Use the default browser stack
 
-    get "/", Exchange.PageController, :index, as: :pages
+    get "/", PageController, :index
   end
 
-  scope "/api/v1" do
+  scope "/api/v1", Exchange do
     pipe_through :api
 
-    # todolist API
-    resources "/todo", Exchange.TodolistController
-  end
-
-  # custom plugs
-  def json_api(conn, _opts) do
-    conn
-    |> put_resp_content_type("application/json")
+    get "/todos", TodolistController, :index
   end
 end

@@ -1,4 +1,3 @@
 defmodule Exchange.LayoutView do
-  use Exchange.Views
-
+  use Exchange.View
 end
